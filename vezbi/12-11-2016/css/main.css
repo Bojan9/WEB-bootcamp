@@ -1,0 +1,27 @@
+.naslov {
+    font-size: 100px;
+}
+
+@media  (min-width: 320px) and (max-width:479px) {
+    .naslov {
+        color: yellow;
+    }
+}
+
+@media (min-width: 480px) and (max-width:767px) {
+    .naslov {
+        color: orange;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .naslov {
+        color: red;
+    }
+}
+
+@media (min-width: 1024px){
+    .naslov{
+        color: black;
+    }
+}
