@@ -86,3 +86,25 @@
     background-color: red;
 
 }
+
+
+@keyframes animacijaZaTrepkanje {
+    0%{
+        opacity: 1;
+        color: green;
+    }
+    50%{
+        opacity: 0.2;
+        color: red;
+    }
+    100%{
+        opacity: 1;
+        color: green;
+    }
+}
+
+
+h1{
+ animation: animacijaZaTrepkanje 2s;
+    animation-iteration-count: infinite;
+}
