@@ -1,18 +1,421 @@
 <html>
+
 <head>
 
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        input[type=text] {
+            width: 50px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        a {
+            font-size: 13px;
+            color: black;
+            opacity: 0.8;
+        }
+
+        b {
+            color: darkgrey;
+        }
+
+        b1 {
+            color: gainsboro;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+        c {
+            color: red;
+        }
+
+        c1 {
+            color: gold;
+            font-size: 15px;
+            font-family: cursive;
+        }
+
+        d {
+            color: skyblue;
+            font-size: 20px;
+            font-family: serif;
+        }
+
+        d1 {
+            color: skyblue;
+            font-size: 25px;
+            font-family: serif;
+        }
+
+        e {
+            color: black;
+        }
+    </style>
+
 </head>
 
 <body>
 
+    <div class="main">
+
+
+        <div class="home">
+            <div class="homeA">
+                <div class="homeALogo">
+                    <h1>BEIGE</h1>
+                </div>
+                <div class="homeASearchBar">
+                    <input type="text" id="searchBar" placeholder="Search..." required>
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="homeALogin">
+                    <div class="homeALogin1">
+                        <br>
+                        <i class="fa fa-unlock-alt">Log in</i>
+                    </div>
+                    <div class="homeALogin2">
+                        <br>
+                        <i class="fa fa-user-plus">Register</i>
+                    </div>
+                </div>
+                <div class="homeACart">
+                    <div class="homeAcart1">
+                        <i class="fa fa-money"></i>
+                    </div>
+                    <div class="homeAcart2">
+
+                        <h1>Cart - <e>3</e></h1>
+                        <h1>Subtotal <e>241$</e></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="homeB">
+                <div class="homeB1">
+                    <div class="homeB1tekst">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h1>JACKET ARMANI JEANS</h1>
+                        <c1>Limited edition</c1>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <b1>Leather black jacket</b1>
+                        <br>
+                        <b1>Armani Jeans</b1>
+                    </div>
+                </div>
+                <div class="homeB2">
+                    <div class="homeBArticle2">
+                        <div class="homeBIMG">
+                            <img src="img/jakna.jpg" alt="jakna" height="100%" width="100%">
+                        </div>
+                        <div class="homeBIme">
+                            <h1>JACKET ARMANI JEANS</h1>
+                            <br>
+                            <a>Leather jacket</a>
+                        </div>
+                        <div class="homeBCena">
+                            <b>-15% | </b>
+                            <c>190$</c>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="shop">
+            <div class="shopA">
+                <div class="shopA1a">
+                    <br>
+                    <br>
+                    <h1>Women</h1>
+                </div>
+                <div class="shopA1b">
+                    <br>
+                    <br>
+                    <h1>Men</h1>
+                </div>
+                <div class="shopA1c">
+                    <br>
+                    <br>
+                    <h1>Shoes</h1>
+                </div>
+                <div class="shopA2">
+                    <br>
+                    <br>
+                    <h1>Accessories</h1>
+                </div>
+            </div>
+            <div class="shopB">
+                <div class="shopB1">
+                    <br>
+                    <br>
+                    <h1> Trend of the week</h1>
+                    <d1> Curent</d1>
+                    <br>
+                    <br>
+                    <input type="button" class="shopButton1" value="More">
+                </div>
+                <div class="shopB2">
+                    <br>
+                    <br>
+                    <h1> Best deals</h1>
+                    <d> Sale | -50%</d>
+                    <br>
+                    <input type="button" class="shopButton2" value="Sale">
+                </div>
+                <div class="shopB3">
+                    <br>
+                    <br>
+                    <h1> New products!</h1>
+                    <d> Trend</d>
+                </div>
+                <div class="shopB4">
+                    <br>
+                    <br>
+                    <h1> Armani jeans</h1>
+                    <d> Brand</d>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="newProducts">
+            <div class="newProductsA">
+                <div class="newProductsANaslov">
+                    <h1>~New Products~</h1>
+                </div>
+            </div>
+            <div class="newProductsB">
+                <div class="newProductsBShop">
+                    <div class="newProductsBArticle1">
+                        <div class="newProductsBIMG">
+                            <img src="img/jakna.jpg" alt="jakna" height="100%" width="100%">
+                        </div>
+                        <div class="newProductsBIme">
+                            <h1>JACKET ARMANI JEANS</h1>
+                            <br>
+                            <a>Leather jacket</a>
+                        </div>
+                        <div class="newProductsBCena">
+                            <b>-15% | </b>
+                            <c>190$</c>
+                        </div>
+                    </div>
+                    <div class="newProductsBArticle2">
+                        <div class="newProductsBIMG">
+                            <img src="img/pantaloni.jpg" alt="pantaloni" height="100%" width="100%">
+                        </div>
+                        <div class="newProductsBIme">
+                            <h1>J BRAND</h1>
+                            <br>
+                            <a>Black jeans</a>
+                        </div>
+                        <div class="newProductsBCena">
+                            <h1>90$</h1>
+                        </div>
+                    </div>
+                    <div class="newProductsBArticle2">
+                        <div class="newProductsBIMG">
+                            <img src="img/patiki.jpg" alt="patiki" height="100%" width="100%">
+                        </div>
+                        <div class="newProductsBIme">
+                            <h1>NIKE SHOES</h1>
+                            <br>
+                            <a>White and black</a>
+                        </div>
+                        <div class="newProductsBCena">
+                            <h1>130$</h1>
+
+                        </div>
+                    </div>
+                    <div class="newProductsBArticle3">
+                        <div class="newProductsBIMG">
+                            <img src="img/rakavici.jpg" alt="rakavici" height="100%" width="100%">
+                        </div>
+                        <div class="newProductsBIme">
+                            <h1>PAUL SMITH</h1>
+                            <br>
+                            <a>Leather gloves</a>
+                        </div>
+                        <div class="newProductsBCena">
+                            <b>-20% | </b>
+                            <c>23$</c>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newProductsC">
+                <input type="button" class="button1" value="<">
+                <input type="button" class="button2" value="List all">
+                <input type="button" class="button1" value=">">
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <div class="contentBlog">
+                <h1>Blog</h1>
+
+                <div class="articleBlog1">
+                    <div class="articleBlogSlika">
+                        <img src="img/prva.jpg" alt="kapa" height="100%" width="100%">
+                    </div>
+
+                    <div class="articleBlogNaslov">
+                        <h1>Fashion</h1>
+                    </div>
+
+                    <div class="articleBlogTekst">
+                        <p>To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on.</p>
+                    </div>
+
+                    <div class="articleBlogLink">
+                        <p>more...</p>
+                    </div>
+                </div>
+                <div class="articleBlog2">
+                    <div class="articleBlogSlika">
+                        <img src="img/vtora.jpg" alt="maica1" height="100%" width="100%">
+                    </div>
+
+                    <div class="articleBlogNaslov">
+                        <h1>NEW!</h1>
+                    </div>
+
+                    <div class="articleBlogTekst">
+                        To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on.
+                    </div>
+
+                    <div class="articleBlogLink">
+                        <p>more...</p>
+                    </div>
+
+                </div>
+                <div class="articleBlog3">
+                    <div class="articleBlogSlika">
+                        <img src="img/treta.jpg" alt="maica2" height="100%" width="100%">
+                    </div>
+
+                    <div class="articleBlogNaslov">
+                        <h1>Sale!</h1>
+                    </div>
+
+                    <div class="articleBlogTekst">
+                        To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on.
+                    </div>
+
+                    <div class="articleBlogLink">
+                        <p>more...</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="footerBlog">
+
+                <div class="footerBlogA">
+                    <i class="fa fa-cart-plus">  Store</i>
+                </div>
+                <div class="footerBlogB">
+                    <i class="fa fa-life-bouy">  Help</i>
+                </div>
+                <div class="footerBlogC">
+                    <i class="fa fa-question-circle">  Ask</i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footerLogo">
+                <h1>BEIGE</h1>
+            </div>
+
+            <div class="footerTekst">
+                <p>To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on.To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on.To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on.To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on.</p>
+            </div>
+
+            <div class="footerContent">
+                <div class="footerContentA">
+                    <div class="footerContentA1">
+                        <h1>Marianne property</h1>
+
+                        <h1>To shewing another</h1>
+
+                        <h1>striking at</h1>
+
+                        <h1>Clothes</h1>
+
+                        <h1>property cheerful</h1>
+                    </div>
+                    <div class="footerContentA1">
+                        <h1>Marianne</h1>
+
+                        <h1>Help</h1>
+
+                        <h1>About</h1>
+
+                        <h1>however by cottage</h1>
+
+                        <h1>demands</h1>
+                    </div>
+                </div>
+
+                <div class="footerContentB">
+                    <div class="footerContentBMail">
+                        <h1>Your current email address</h1>
+                        <input type="email" name="email" placeholder="Your E-mail">
+                    </div>
+                    <div class="footerContentBIcons">
+                        <h1>Follow us here!</h1>
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-google-plus-square"></i>
+                        <i class="fa fa-twitter-square"></i>
+                        <i class="fa fa-tumblr-square"></i>
+                    </div>
+                </div>
+
+                <div class="footerContentC">
+                    <div class="footerContentC1">
+                        <h1>Your payment metod</h1>
+
+                        <i class="fa fa-cc-visa"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-cc-paypal"></i>
+                    </div>
+                    <div class="footerContentC2">
+                        <h1>Copyright@2016 BEIGE</h1>
+                        <h1>Online magazine</h1>
+                        <br>
+                        <h1>Design by: Bojan Spasovski!</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
 </body>
 
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 </html>
