@@ -1,0 +1,99 @@
+.main{
+    width: 1280px;
+    height: 1024px;
+    float: left;
+}
+
+.logo{
+    width: 1280px;
+    height: 160px;
+    float: left;
+}
+.slikaLogo{
+    width: 280px;
+    height: 160px;
+    float: left;
+    margin-left: 500px;
+    margin-right: 500px;
+
+}
+
+.nav{
+    width: 1280px;
+    height: 320px;
+    float: left;
+    background-color: #062F4F;
+}
+.navInner{
+    width: 1000px;
+    height: 120px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 180px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.navHome{
+    width: 240px;;
+    height: 100px;
+    float: left;
+    margin: 10px 30px;
+    background-color: #062F4F;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+.navAP{
+    width: 670px;
+    height: 45px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
+.navPC{
+    width: 670px;
+    height: 45px;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 30px;
+}
+.navAbout{
+    width: 320px;
+    height: 45px;
+    float: left;
+    margin-right: 30px;
+    background-color: #B82601;
+    text-align: center;
+    font-size: 40px;
+    font-family: fantasy;
+}
+.navProjects{
+    width: 320px;
+    height: 45px;
+    float: left;
+    background-color: #B82601;
+    text-align: center;
+    font-size: 40px;
+    font-family: fantasy;
+}
+.navPlans{
+    width: 320px;
+    height: 45px;
+    float: left;
+    margin-right: 30px;
+    background-color: #B82601;
+    text-align: center;
+    font-size: 40px;
+    font-family: fantasy;
+}
+.navContact{
+    width: 320px;
+    height: 45px;
+    float: left;
+    background-color: #B82601;
+    text-align: center;
+    font-size: 40px;
+    font-family: fantasy;
+}
