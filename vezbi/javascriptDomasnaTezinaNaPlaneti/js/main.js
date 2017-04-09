@@ -5,12 +5,14 @@ var jupiter = 2.4;
 
 var tezina;
 
-function presmetaj(){
-    if(tezina =< 1){
 
-    return(tezina * mesecina);
-    return(tezina * mars);
-    return(tezina * jupiter);
+function presmetaj(){
+    if(tezina > 0){
+
+        document.getElementById(mesecina).innerHTML = tezina * mesecina;
+        document.getElementById(mars).innerHTML = tezina * mars;
+        document.getElementById(jupiter).innerHTML = tezina * jupiter;
+
     }
     else{
         console.log("Ti ne postois");
