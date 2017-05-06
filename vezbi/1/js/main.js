@@ -14,3 +14,8 @@ function presmetaj (){
 
     izlez.value = rezultat;
 }
+
+function vnesi(broj){
+
+
+}

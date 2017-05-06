@@ -1,0 +1,17 @@
+.red{
+    width: 208px;
+    height: 52px;
+}
+
+.brojka{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: 1px solid black;
+}
+
+.golemBroj{
+    width: 206px;
+    height: 52px;
+    border: 1px solid black;
+}
