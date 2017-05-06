@@ -70,7 +70,7 @@
     width: 1000px;
     height: 540px;
     float: left;
-    background-color: #D3E397;
+    background-color: #8DCDC1;
     margin-top: 140px;
     margin-left: 140px;
     margin-right: 140px;
@@ -91,14 +91,14 @@
     width: 500px;
     height: 540px;
     float: left;
-    background-color: #FFF5C3;
+    background-color: #8DCDC1;
 }
 .mainContentInfo1{
     width: 400px;
     height: 440px;
     float: left;
     margin: 50px;
-    background-color: #FFF5C3;
+    background-color: #8DCDC1;
 }
 
 .mainFooter{
@@ -117,11 +117,8 @@
     color: white;
     font-size: 50px;
 }
-.mainFooterSubscribe{
-    width: 200px;
+.mainAbout{
+    width: 100px;
     height: 100px;
-    float: left;
-    margin-left: 540px;
-    background-color: gold;
+    background-color: red;
 }
-
