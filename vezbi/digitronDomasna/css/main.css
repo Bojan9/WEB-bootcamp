@@ -1,0 +1,70 @@
+.digitron{
+    width: 438px;
+    height: 1000px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.red{
+    width: 448px;
+    height: 58px;
+}
+
+
+
+/* brojki i znaci*/
+.brojka{
+    width: 107px;
+    height: 52px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 50px;
+    margin: 1px;
+}
+.ednakvo{
+    width: 107px;
+    height: 52px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 50px;
+    margin: 1px;
+    background-color: dodgerblue;
+    color: white;
+}
+.znaci{
+    width: 107px;
+    height: 52px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 50px;
+    margin: 1px;
+    background-color: #e6e6e6;
+    color: #262626;
+}
+.zagradi{
+    width: 107px;
+    height: 52px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 45px;
+    margin: 1px;
+    background-color: #e6e6e6;
+    color: #262626;
+}
+
+
+
+/*pecatenje*/
+#pecatenjeFunkcija{
+    width: 424px;
+    height: 400px;
+    border: 1px solid black;
+}
