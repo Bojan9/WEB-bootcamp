@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="css/main.css" rel="stylesheet" />
+
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="kocka"></div>
+
+</body>
+
+
+<script>
+
+    /*$('#kocka').animate({
+                left:'+=5'
+           },500) */
+
+    $('#kocka').on('click', function () {
+        $('#kocka').animate({
+            left: '+=1000'
+        }, 500, function () {
+
+            $('#kocka').animate({
+                left: '-=500',
+                top: '+=250'
+            }, 500, function () {
+
+                $('#kocka').animate({
+                    left: '+=500',
+                    top: '+=250'
+                }, 500, function () {
+
+                    $('#kocka').animate({
+                        left: '-=500',
+                        top: '-=250'
+                    }, 500, function () {
+
+                        $('#kocka').animate({
+                            left: '-=500',
+                            top: '+=250'
+                        }, 500, function () {
+                            console.log('Animacijata e zavrsena!!!')
+                        })
+                    })
+                })
+            })
+        })
+    })
+</script>
+
+</html>
