@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="css/main.css" rel="stylesheet" />
+
+    <title>domasnaJquery</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="kocka"></div>
+
+</body>
+
+
+<script>
+
+    /*$('#kocka').animate({
+                left:'+=5'
+           },500) */
+
+    $('#kocka').mouseover(function(){
+        $('#kocka').css("background-color", "green");
+    });
+
+    $('#kocka').on('click',function(){
+        $('#kocka').css("background-color", "blue");
+    });
+
+
+
+
+
+</script>
+
+</html>
