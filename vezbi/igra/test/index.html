@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jquery</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="kocka"></div>
+
+
+</body>
+    <script>
+
+        $(function(){
+
+            var visina = window.innerHeight;
+            var sirina = window.innerWidth;
+
+            $('.kocka').on('mouseover', function(){
+                var maxVisina = visina - parseInt($('.kocka').css('height'));
+                console.log(maxVisina);
+                var maxSirina = sirina - parseInt($('.kocka').css('height'));
+                console.log(maxSirina);
+
+                $('.kocka').css({
+                    'top' : random(maxVisina) + 'px',
+                    'left' : random(maxSirina) + 'px'
+                })
+
+
+
+
+            })
+
+
+
+
+             function random(max){
+       return Math.floor(Math.random() * max) + 1  ;
+    }
+        })
+
+    </script>
+</html>
