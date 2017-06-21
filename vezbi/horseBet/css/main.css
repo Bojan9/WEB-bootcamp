@@ -1,0 +1,105 @@
+.horseBet{
+    width: 1000px;
+    height: 500px;
+    float: left;
+}
+
+.imeHorseBet{
+    width: 998px;
+    height: 98px;
+    float: left;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 60px;
+}
+
+.konji{
+    width: 600px;
+    height: 400px;
+    float: left;
+    background-image: url("../sliki/bg.png");
+}
+
+.konj{
+    width: 600px;
+    height: 85px;
+    float: left;
+}
+
+.infoKonj{
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+
+.slika{
+    width: 398px;
+    height: 198px;
+    float: left;
+}
+
+.info{
+    width: 400px;
+    height: 100px;
+    float: left;
+}
+
+.infoA{
+    width: 398px;
+    height: 23px;
+    float: left;
+    border: solid blue 1px;
+}
+.infoA1{
+    width: 199px;
+    height: 23px;
+    float: left;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.infoB{
+    width: 398;
+    height: 23px;
+    float: left;
+}
+.infoB1{
+    width: 100px;
+    height: 25px;
+    float: left;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.infoB2{
+    width: 98px;
+    height: 23px;
+    float: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-right: solid black 1px;
+}
+
+.kladilnica{
+    width: 400px;
+    height: 100px;
+    float: left;
+}
+
+.uplata{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.start{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
