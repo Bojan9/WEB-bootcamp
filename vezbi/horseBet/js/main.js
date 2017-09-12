@@ -53,3 +53,23 @@ var kladilnica = {
     "maxVlog" : 1000000
 }
 
+var prethodnaSlika = 0;
+
+var interval = setInterval(function(){
+    if(prethodnaSlika == 0){
+        $('.konj').css('background-position-x', '100px');
+    }
+    if(prethodnaSlika == 100){
+        $('.konj').css('background-position-x', '200px');
+    }
+    if(prethodnaSlika == 200){
+        $('.konj').css('background-position-x', '300px');
+    }
+    if(prethodnaSlika == 300){
+        $('.konj').css('background-position-x', '0px');
+    }
+    prethodnaSlika += 100;
+    if(prethodnaSlika == 400){
+        prethodnaSlika = 0;
+    }console.log(prethodnaSlika);
+},100)
