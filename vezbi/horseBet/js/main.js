@@ -54,7 +54,7 @@ var kladilnica = {
 }
 
 var prethodnaSlika = 0;
-var interval = setInterval(function () {
+var interval = setInterval(function imeNaFunkcija() {
     switch (prethodnaSlika) {
     case 0:
         iterator(1);
@@ -84,16 +84,3 @@ function iterator(redenBroj) {
         }
     }
 }
-
-//function iterator(redenBroj) {
-//    var i = 0;
-//    while(i<4){
-//        var konj =$($('.konj img')[i]);
-//        konj.attr('src', '../sliki/k' + i + '_' + redenBroj + '.png');
-//        konj.css('margin-left', parseInt(konj.css('margin-left')) + Math.floor((Math.random() * 10)));
-//        i++;
-//        if(parseInt(konj.css('margin-left'))>=425){
-//            clearInterval(interval);
-//        }
-//    }
-//}
