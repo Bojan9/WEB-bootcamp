@@ -84,3 +84,36 @@ function iterator(redenBroj) {
         }
     }
 }
+
+/* pa ne e tolku ednostavno,
+Treba da kreiras funkcija
+so nekoe ime koja kkje go pusti intervalot
+i potoa na klik daja povikas istata
+
+primer :
+function pocni (){
+var interval = setInterval(function imeNaFunkcija() {
+    switch (prethodnaSlika) {
+    case 0:
+        iterator(1);
+        break;
+    case 1:
+        iterator(2);
+        break;
+    case 2:
+        iterator(3);
+        break;
+    case 3:
+        iterator(0);
+        prethodnaSlika = -1;
+        break;
+    }
+    prethodnaSlika++;
+}, 100)
+
+}
+
+
+I na on click da ja stais taa funkcija da se ivrsi
+ajde pobaj
+*/
