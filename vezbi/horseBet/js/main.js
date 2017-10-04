@@ -52,9 +52,9 @@ var kladilnica = {
     "minVlog": 100,
     "maxVlog": 1000000
 }
-
+function start (){
 var prethodnaSlika = 0;
-var interval = setInterval(function imeNaFunkcija() {
+var interval = setInterval(function() {
     switch (prethodnaSlika) {
     case 0:
         iterator(1);
@@ -83,4 +83,5 @@ function iterator(redenBroj) {
             clearInterval(interval);
         }
     }
+}
 }
