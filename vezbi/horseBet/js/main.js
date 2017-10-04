@@ -52,36 +52,37 @@ var kladilnica = {
     "minVlog": 100,
     "maxVlog": 1000000
 }
-function start (){
-var prethodnaSlika = 0;
-var interval = setInterval(function() {
-    switch (prethodnaSlika) {
-    case 0:
-        iterator(1);
-        break;
-    case 1:
-        iterator(2);
-        break;
-    case 2:
-        iterator(3);
-        break;
-    case 3:
-        iterator(0);
-        prethodnaSlika = -1;
-        break;
-    }
-    prethodnaSlika++;
-}, 100)
 
-function iterator(redenBroj) {
-    var i = 0;
-    for (i = 0; i < 4; i++) {
-        var konj = $($('.konj img')[i]);
-        konj.attr('src', '../sliki/k' + i + '_' + redenBroj + '.png');
-        konj.css('margin-left', parseInt(konj.css('margin-left')) + Math.floor((Math.random() * 10)));
-        if (parseInt(konj.css('margin-left')) >= 425) {
-            clearInterval(interval);
+function start() {
+    var prethodnaSlika = 0;
+    var interval = setInterval(function () {
+        switch (prethodnaSlika) {
+        case 0:
+            iterator(1);
+            break;
+        case 1:
+            iterator(2);
+            break;
+        case 2:
+            iterator(3);
+            break;
+        case 3:
+            iterator(0);
+            prethodnaSlika = -1;
+            break;
+        }
+        prethodnaSlika++;
+    }, 100)
+
+    function iterator(redenBroj) {
+        var i = 0;
+        for (i = 0; i < 4; i++) {
+            var konj = $($('.konj img')[i]);
+            konj.attr('src', '../sliki/k' + i + '_' + redenBroj + '.png');
+            konj.css('margin-left', parseInt(konj.css('margin-left')) + Math.floor((Math.random() * 10)));
+            if (parseInt(konj.css('margin-left')) >= 425) {
+                clearInterval(interval);
+            }
         }
     }
-}
 }
