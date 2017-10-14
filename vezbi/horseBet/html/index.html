@@ -20,67 +20,31 @@
             <h1> Horse Bet</h1></div>
 
         <div class="konji">
-            <div class="konj"><img src="../sliki/k0_0.png"></div>
-            <div class="konj"><img src="../sliki/k1_0.png"></div>
-            <div class="konj"><img src="../sliki/k2_0.png"></div>
-            <div class="konj"><img src="../sliki/k3_0.png"></div>
+            <div class="konj" onclick='prikaziKonj(0)'><img src="../sliki/k0_0.png"></div>
+            <div class="konj" onclick='prikaziKonj(1)'><img src="../sliki/k1_0.png"></div>
+            <div class="konj" onclick='prikaziKonj(2)'><img src="../sliki/k2_0.png"></div>
+            <div class="konj" onclick='prikaziKonj(3)'><img src="../sliki/k3_0.png"></div>
         </div>
 
-        <div class="infoKonj">
-            <div class="slika"><img src="../sliki/konjB1.jpg"></div>
-            <div class="info">
-
-                <div class="infoA">
-                    <div class="infoA1">
-                        <h1>Ime</h1></div>
-                    <div class="infoA1">
-                        <h1>Crni</h1></div>
-                </div>
-                <div class="infoB">
-                    <div class="infoB1">
-                        <h1>Boja</h1>
-                    </div>
-                    <div class="infoB2">
-                        <h1>Crna</h1>
-                    </div>
-                    <div class="infoB1">
-                        <h1>Broj</h1>
-                    </div>
-                    <div class="infoB1">
-                        <h1>Eden</h1>
-                    </div>
-                </div>
-                <div class="infoA">
-                    <div class="infoA1">
-                        <h1>Dolzina na noze</h1></div>
-                    <div class="infoA1">
-                        <h1>45 cm</h1></div>
-                </div>
-                <div class="infoB">
-                    <div class="infoB1">
-                        <h1>Masa</h1>
-                    </div>
-                    <div class="infoB2">
-                        <h1>130 kg</h1>
-                    </div>
-                    <div class="infoB1">
-                        <h1>Brzina</h1>
-                    </div>
-                    <div class="infoB1">
-                        <h1>40 km/h</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="externalHorses"></div>
 
         <div class="kladilnica">
             <div class="uplata">
                 <button class="uplata">Uplata</button>
             </div>
             <div class="start">
-                <button class="start" onclick="start()">Start</button>
+                <button class="start" onclick="trka()">Start</button>
             </div>
         </div>
+
+        <input type="number" class="broj"/>
+        <select class="selekcija">
+            <option value="" disabled selected>Select your option</option>
+            <option value="crni">crni</option>
+            <option value="belco">belco</option>
+            <option value="bojan">bojan</option>
+            <option value="aleksandar">aleksandar</option>
+        </select>
 
     </div>
 

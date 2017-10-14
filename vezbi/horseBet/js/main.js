@@ -1,3 +1,5 @@
+$('.externalHorses').load('horses.html');
+
 var konji = [
     {
         "ime": 'crni',
@@ -29,9 +31,9 @@ var konji = [
         "broj": 4,
         "brzina": 29,
         "masa": 149,
-        "dolzNoze": 55,
+        "dolzNoze": 55
     }
-]
+];
 
 var staza = [
     {
@@ -44,18 +46,41 @@ var staza = [
         "dolzina": 1500,
         "podloga": 'pesok'
     }
-]
+];
 
 var kladilnica = {
 
     "koeficient": 2,
     "minVlog": 100,
     "maxVlog": 1000000
+};
+
+
+
+var pocnataTrka = false;
+
+
+
+var interval;
+
+function iterator(redenBroj) {
+    var i = 0;
+    for (i = 0; i < 4; i++) {
+        var konj = $($('.konj img')[i]);
+        konj.attr('src', '../sliki/k' + i + '_' + redenBroj + '.png');
+        konj.css('margin-left', parseInt(konj.css('margin-left')) + Math.floor((Math.random() * 10)));
+        if (parseInt(konj.css('margin-left')) >= 425) {
+            clearInterval(interval);
+            pocnataTrka = false;
+            alert('pobedi konjot' + i );
+        }
+    }
 }
 
 function start() {
+    pocnataTrka = true;
     var prethodnaSlika = 0;
-    var interval = setInterval(function () {
+    interval = setInterval(function () {
         switch (prethodnaSlika) {
         case 0:
             iterator(1);
@@ -72,17 +97,33 @@ function start() {
             break;
         }
         prethodnaSlika++;
-    }, 100)
+    }, 100);
+}
 
-    function iterator(redenBroj) {
-        var i = 0;
-        for (i = 0; i < 4; i++) {
-            var konj = $($('.konj img')[i]);
-            konj.attr('src', '../sliki/k' + i + '_' + redenBroj + '.png');
-            konj.css('margin-left', parseInt(konj.css('margin-left')) + Math.floor((Math.random() * 10)));
-            if (parseInt(konj.css('margin-left')) >= 425) {
-                clearInterval(interval);
-            }
-        }
+
+
+function reset() {
+    for (i = 0; i < 4; i++) {
+        var konj = $($('.konj img')[i]);
+        konj.attr('src', '../sliki/k' + i + '_0.png');
+        konj.css('margin-left', 0);
     }
+    pocnataTrka = false;
+}
+function trka() {
+    if (pocnataTrka === true) {
+
+    } else {
+        reset();
+        start();
+    }
+}
+
+function kladilnica() {
+    $('.broj').val();
+    $('.selekcija').val();
+}
+function prikaziKonj(redenBroj) {
+    $('.infoKonj').hide();
+    $('.k' + redenBroj).show();
 }

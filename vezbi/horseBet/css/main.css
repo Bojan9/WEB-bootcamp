@@ -1,6 +1,6 @@
 .horseBet{
     width: 1000px;
-    height: 500px;
+    height: 100%;
     float: left;
 }
 
@@ -88,10 +88,21 @@
     width: 200px;
     height: 100px;
     float: left;
+    color: goldenrod;
+    font-family: fantasy;
+    background-color: wheat;
 }
 
 .start{
     width: 200px;
+    height: 100px;
+    float: left;
+    color: goldenrod;
+    font-family: fantasy;
+    background-color: wheat;
+}
+.kladilnica1{
+    width: 400px;
     height: 100px;
     float: left;
 }
@@ -102,4 +113,9 @@ table {
 
 table, th, td {
     border: 1px solid black;
+}
+
+
+.infoKonj{
+    display: none;
 }
