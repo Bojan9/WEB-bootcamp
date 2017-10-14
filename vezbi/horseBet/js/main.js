@@ -7,7 +7,8 @@ var konji = [
         "broj": 1,
         "brzina": 40,
         "masa": 130,
-        "dolzNoze": 45
+        "dolzNoze": 45,
+        "koeficient": 1.3
     },
     {
         "ime": 'belco',
@@ -15,7 +16,8 @@ var konji = [
         "broj": 2,
         "brzina": 36,
         "masa": 120,
-        "dolzNoze": 39
+        "dolzNoze": 39,
+        "koeficient": 1.7
     },
     {
         "ime": 'bojan',
@@ -23,7 +25,8 @@ var konji = [
         "broj": 3,
         "brzina": 59,
         "masa": 115,
-        "dolzNoze": 43
+        "dolzNoze": 43,
+        "koeficient": 2
     },
     {
         "ime": 'aleksandar',
@@ -31,7 +34,8 @@ var konji = [
         "broj": 4,
         "brzina": 29,
         "masa": 149,
-        "dolzNoze": 55
+        "dolzNoze": 55,
+        "koeficient": 2.3
     }
 ];
 
@@ -47,13 +51,13 @@ var staza = [
         "podloga": 'pesok'
     }
 ];
-
-var kladilnica = {
-
-    "koeficient": 2,
-    "minVlog": 100,
-    "maxVlog": 1000000
-};
+//
+//var kladilnica = {
+//
+//    "koeficient": 2,
+//    "minVlog": 100,
+//    "maxVlog": 1000000
+//};
 
 
 
@@ -72,7 +76,7 @@ function iterator(redenBroj) {
         if (parseInt(konj.css('margin-left')) >= 425) {
             clearInterval(interval);
             pocnataTrka = false;
-            alert('pobedi konjot' + i );
+            alert('pobedi konjot' + i);
         }
     }
 }
@@ -110,6 +114,7 @@ function reset() {
     }
     pocnataTrka = false;
 }
+
 function trka() {
     if (pocnataTrka === true) {
 
@@ -120,9 +125,20 @@ function trka() {
 }
 
 function kladilnica() {
-    $('.broj').val();
-    $('.selekcija').val();
+    var suma = parseInt($('.suma').val());
+    var selektiranKonj = parseInt($('.selekcija').val());
+    var konj = konji[selektiranKonj];
+
+    var html = "<tr> <td>"+ suma +"</td><td>"+ konj.ime + "</td><td>" + konj.koeficient + "</td><td>"+parseInt(suma * konj.koeficient)+"</td></tr>";
+
+
+//    console.log(parseInt(parseInt($('.suma').val()) * konji[parseInt($('.selekcija').val())].koeficient));
+
+    $('.rezultati tbody').append(html);
+
+
 }
+
 function prikaziKonj(redenBroj) {
     $('.infoKonj').hide();
     $('.k' + redenBroj).show();

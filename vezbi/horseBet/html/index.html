@@ -30,21 +30,35 @@
 
         <div class="kladilnica">
             <div class="uplata">
-                <button class="uplata">Uplata</button>
+                <button class="uplata" onclick="kladilnica()">Uplata</button>
             </div>
             <div class="start">
                 <button class="start" onclick="trka()">Start</button>
             </div>
         </div>
 
-        <input type="number" class="broj"/>
+        <input type="number" class="suma"/>
         <select class="selekcija">
             <option value="" disabled selected>Select your option</option>
-            <option value="crni">crni</option>
-            <option value="belco">belco</option>
-            <option value="bojan">bojan</option>
-            <option value="aleksandar">aleksandar</option>
+            <option value="0">crni</option>
+            <option value="1">belco</option>
+            <option value="2">bojan</option>
+            <option value="3">aleksandar</option>
         </select>
+
+        <table class="rezultati">
+        <thead>
+            <tr>
+            <td>Uplata</td>
+            <td>Konj</td>
+            <td>Koeficient</td>
+            <td>Vkupno</td>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
 
     </div>
 
