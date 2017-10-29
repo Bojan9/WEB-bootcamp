@@ -1,5 +1,5 @@
 .horseBet{
-    width: 1000px;
+    width: 1500px;
     height: 100%;
     float: left;
 }
@@ -27,21 +27,23 @@
 }
 
 .infoKonj{
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 400px;
     float: left;
+    margin-left: 50px;
 }
 
 .slika{
-    width: 398px;
-    height: 198px;
+    width: 4000;
+    height: 200px;
     float: left;
 }
 
 .info{
     width: 400px;
-    height: 100px;
+    height: 131;
     float: left;
+    border: solid black 1px;
 }
 
 .infoA{
@@ -49,6 +51,7 @@
     height: 23px;
     float: left;
     border: solid orange 1px;
+    background-color: wheat;
 }
 .infoA1{
     width: 199px;
@@ -80,7 +83,7 @@
 
 .kladilnica{
     width: 400px;
-    height: 100px;
+    height: 400px;
     float: left;
 }
 
@@ -107,14 +110,19 @@
     float: left;
 }
 
-table {
-    border-collapse: collapse;
+.selekcija{
+    width: 131px;
+    height: 19px;
+    float: right;
+}
+.selekcijaA{
+    width: 400px;
+    height: 200px;
 }
 
-table, th, td {
+.rezultati{
     border: 1px solid black;
 }
-
 
 .infoKonj{
     display: none;
