@@ -1,5 +1,8 @@
 "use strict";
-var ime, prezime;
+var person={
+    ime: "",
+    prezime: ""
+}
 function newJoke() {
     //    $.get("https://api.chucknorris.io/jokes/random", function(data) {
     //        var html = "<p>" + data.value + "</p>";
@@ -12,8 +15,8 @@ function newJoke() {
         method: "GET",
         url: "http://api.icndb.com/jokes/random",
         data: {
-            "firstName": ime,
-            "lastName": prezime
+            "firstName": person.ime,
+            "lastName": person.prezime
         }
     }).done(function (data) {
         var html = "<p>" + data.value.joke + "</p>";
@@ -30,12 +33,12 @@ $(function () {
     });
 
     $(".save").on("click", function () {
-        ime = $("#ime-input").val();
-        prezime = $("#prezime-input").val();
+        person.ime = $("#ime-input").val();
+        person.prezime = $("#prezime-input").val();
 
         if (ime !== "" && prezime !== "") {
-            $("#ime")[0].innerHTML = ime;
-            $("#prezime")[0].innerHTML = prezime;
+            $("#ime")[0].innerHTML = person.ime;
+            $("#prezime")[0].innerHTML = person.prezime;
             $(".data-wrapper").hide();
             $(".joke-wrapper").show();
         } else {
